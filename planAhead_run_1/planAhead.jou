@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue May 17 21:32:50 2022
+# Process ID: 15988
+# Log file: D:/zuchengyuanli/ri/planAhead_run_1/planAhead.log
+# Journal file: D:/zuchengyuanli/ri/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/zuchengyuanli/ri/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {an[3]} {an[2]} {an[1]} {an[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {seg[7]} {seg[6]} {seg[5]} {seg[4]} {seg[3]} {seg[2]} {seg[1]} {seg[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVCMOS18 [get_ports [list clk_s]]
+set_property iostandard LVCMOS18 [get_ports [list rst]]
+set_property iostandard LVCMOS18 [get_ports [list sw]]
+set_property pulltype PULLDOWN [get_ports [list sw]]
+set_property pulltype PULLDOWN [get_ports [list rst]]
+set_property pulltype PULLDOWN [get_ports [list clk_s]]
+set_property pulltype PULLDOWN [get_ports [list clk]]
+startgroup
+set_property package_pin R4 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin H4 [get_ports clk_s]
+endgroup
+startgroup
+set_property package_pin T3 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports sw]
+endgroup
+startgroup
+set_property package_pin L21 [get_ports {an[3]}]
+endgroup
+startgroup
+set_property package_pin M22 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin M21 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin N22 [get_ports {an[0]}]
+endgroup
+startgroup
+set_property package_pin H19 [get_ports {seg[7]}]
+endgroup
+startgroup
+set_property package_pin G20 [get_ports {seg[6]}]
+endgroup
+startgroup
+set_property package_pin J22 [get_ports {seg[5]}]
+endgroup
+startgroup
+set_property package_pin K22 [get_ports {seg[4]}]
+endgroup
+startgroup
+set_property package_pin K21 [get_ports {seg[3]}]
+endgroup
+startgroup
+set_property package_pin H20 [get_ports {seg[2]}]
+endgroup
+startgroup
+set_property package_pin H22 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin J21 [get_ports {seg[0]}]
+endgroup
+save_constraints

@@ -1,0 +1,42 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "an[3]" IOSTANDARD = LVCMOS18;
+NET "an[2]" IOSTANDARD = LVCMOS18;
+NET "an[1]" IOSTANDARD = LVCMOS18;
+NET "an[0]" IOSTANDARD = LVCMOS18;
+NET "seg[7]" IOSTANDARD = LVCMOS18;
+NET "seg[6]" IOSTANDARD = LVCMOS18;
+NET "seg[5]" IOSTANDARD = LVCMOS18;
+NET "seg[4]" IOSTANDARD = LVCMOS18;
+NET "seg[3]" IOSTANDARD = LVCMOS18;
+NET "seg[2]" IOSTANDARD = LVCMOS18;
+NET "seg[1]" IOSTANDARD = LVCMOS18;
+NET "seg[0]" IOSTANDARD = LVCMOS18;
+NET "clk" IOSTANDARD = LVCMOS18;
+NET "clk_s" IOSTANDARD = LVCMOS18;
+NET "rst" IOSTANDARD = LVCMOS18;
+NET "sw" IOSTANDARD = LVCMOS18;
+NET "sw" PULLDOWN;
+NET "rst" PULLDOWN;
+NET "clk_s" PULLDOWN;
+NET "clk" PULLDOWN;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = R4;
+NET "clk_s" LOC = H4;
+NET "rst" LOC = T3;
+NET "sw" LOC = T4;
+NET "an[3]" LOC = L21;
+NET "an[2]" LOC = M22;
+NET "an[1]" LOC = M21;
+NET "an[0]" LOC = N22;
+NET "seg[7]" LOC = H19;
+NET "seg[6]" LOC = G20;
+NET "seg[5]" LOC = J22;
+NET "seg[4]" LOC = K22;
+NET "seg[3]" LOC = K21;
+NET "seg[2]" LOC = H20;
+NET "seg[1]" LOC = H22;
+NET "seg[0]" LOC = J21;

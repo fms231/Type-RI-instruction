@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/RAM_B.v"
+verilog work "ipcore_dir/Inst_code.v"
+verilog work "top.v"

@@ -1,0 +1,147 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/zuchengyuanli/ri/pa.fromHdl.tcl
+# create_project -name ri -dir "D:/zuchengyuanli/ri/planAhead_run_1" -part xc7a100tfgg484-2L
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "top.ucf" [current_fileset -constrset]
+Adding file 'D:/zuchengyuanli/ri/top.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/Inst_code.ngc}]
+# add_files [list {ipcore_dir/RAM_B.ngc}]
+# set hdlfile [add_files [list {ipcore_dir/RAM_B.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/Inst_code.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {top.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top top $srcset
+# add_files [list {top.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Inst_code.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/RAM_B.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc7a100tfgg484-2L
+Using Verific elaboration
+Parsing VHDL file "D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/zuchengyuanli/ri/ipcore_dir/RAM_B.v" into library work
+Analyzing Verilog file "D:/zuchengyuanli/ri/ipcore_dir/Inst_code.v" into library work
+Analyzing Verilog file "D:/zuchengyuanli/ri/top.v" into library work
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Inst_code.ngc ...
+WARNING:NetListWriters:298 - No output is written to Inst_code.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Inst_code.edif ...
+ngc2edif: Total memory usage is 4316136 kilobytes
+
+Reading core file 'D:/zuchengyuanli/ri/ipcore_dir/Inst_code.ngc' for (cell view 'Inst_code', library 'work', file 'Inst_code.v')
+Parsing EDIF File [./.Xil/PlanAhead-15988-LAPTOP-RLSMDEM0/ngc2edif/Inst_code.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-15988-LAPTOP-RLSMDEM0/ngc2edif/Inst_code.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RAM_B.ngc ...
+WARNING:NetListWriters:298 - No output is written to RAM_B.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RAM_B.edif ...
+ngc2edif: Total memory usage is 4317096 kilobytes
+
+Reading core file 'D:/zuchengyuanli/ri/ipcore_dir/RAM_B.ngc' for (cell view 'RAM_B', library 'work', file 'RAM_B.v')
+Parsing EDIF File [./.Xil/PlanAhead-15988-LAPTOP-RLSMDEM0/ngc2edif/RAM_B.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-15988-LAPTOP-RLSMDEM0/ngc2edif/RAM_B.edif]
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/fgg484/Package.xml
+Loading io standards from D:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : D:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing UCF File [D:/zuchengyuanli/ri/top.ucf]
+Finished Parsing UCF File [D:/zuchengyuanli/ri/top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f956b7d3
+open_rtl_design: Time (s): elapsed = 00:00:10 . Memory (MB): peak = 885.344 ; gain = 376.320
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {an[3]} {an[2]} {an[1]} {an[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {seg[7]} {seg[6]} {seg[5]} {seg[4]} {seg[3]} {seg[2]} {seg[1]} {seg[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVCMOS18 [get_ports [list clk_s]]
+set_property iostandard LVCMOS18 [get_ports [list rst]]
+set_property iostandard LVCMOS18 [get_ports [list sw]]
+set_property pulltype PULLDOWN [get_ports [list sw]]
+set_property pulltype PULLDOWN [get_ports [list rst]]
+set_property pulltype PULLDOWN [get_ports [list clk_s]]
+set_property pulltype PULLDOWN [get_ports [list clk]]
+startgroup
+set_property package_pin R4 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin H4 [get_ports clk_s]
+endgroup
+startgroup
+set_property package_pin T3 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports sw]
+endgroup
+startgroup
+set_property package_pin L21 [get_ports {an[3]}]
+endgroup
+startgroup
+set_property package_pin M22 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin M21 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin N22 [get_ports {an[0]}]
+endgroup
+startgroup
+set_property package_pin H19 [get_ports {seg[7]}]
+endgroup
+startgroup
+set_property package_pin G20 [get_ports {seg[6]}]
+endgroup
+startgroup
+set_property package_pin J22 [get_ports {seg[5]}]
+endgroup
+startgroup
+set_property package_pin K22 [get_ports {seg[4]}]
+endgroup
+startgroup
+set_property package_pin K21 [get_ports {seg[3]}]
+endgroup
+startgroup
+set_property package_pin H20 [get_ports {seg[2]}]
+endgroup
+startgroup
+set_property package_pin H22 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin J21 [get_ports {seg[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue May 17 21:34:50 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead
